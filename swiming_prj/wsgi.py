@@ -1,5 +1,5 @@
 """
-WSGI config for do_it_django_prj project.
+WSGI config for swiming_prj project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'do_it_django_prj.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'swiming_prj.settings')
 
 application = get_wsgi_application()

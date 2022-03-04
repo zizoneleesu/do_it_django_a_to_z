@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="http://drive.google.com/uc?export=view&id=1bTjAuPS1UTsCqBxAnPRuJzp_XfCq1ug8">
+    
+    <style>
+        body {
+            background: url(https://lh3.google.com/u/0/d/1Zg9cXPVJWg95qnHkaBGC6s0171y1xoTV=w1919-h941-iv1) no-repeat;
+            background-size: 200%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header2">
+        <nav class="navbar navbar-expand-lg pp inner">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="main_최종.html">
+                    <img src="https://lh3.googleusercontent.com/fife/AAWUweUlH06pVcqakN2C-dLnkWfxGUqXBe8PP26dzj0FEKim6-zy4dHpNEQ1crKcGpII2fgwssHJA7Nx3CZ7Hfii8GbAKTXE8NpiOkLacLruwakvTqilvp4sl81gmihoJfwkfbh5ThvL_bM9m1ExMrRRdpgHTq-D-vfx_eNJLCvoXuYjSBwwUev2RjPOJI_c699mNFdOEpdhouPI93Y3_X9M8BWpmUZoE1qPC4EOC4SyeFnYFB8vQI5tbrHs8viHkYLgsHplxlSLEolRKCC0MS7xVSMqBX5bmhYnYuoiEPc-12Ur5TaA90BNRSHOvkkOZDTDf9ZrkhIsxl-zXo49cHITgNUTk0GA8c5FXpia7hLit3Y1cNAX6f0MuoA2mZXcLeqAIUewz2WVkBn2YFi5k2jVydSkNWbdDiao5QqmfjZ_Q6z2M57_w4JCkVRj3HaRdffMEY0scX3pcDKYBNUSi2REteUBx1yxAJX26USmpCGDCyJ9X3QM8rD6Bj_rOHTxsTleLIs9LLTz-AH8Y-GKIXSBaZcjrkgwPWxAnuXG0yks41Z7iw7uYl6bO5BD-9IEQr3OurG-qtIIoRCxlw5DVLFvewqpW9_Fbc9Ce0IpLBtuNskpMdBh3wjyUfhHLyh6DyV9qnaMP02-IZ2GBvj_sJoierUYSP6TUhK91EvkscvuCpnupCLsGsh8l5H6qWEBEJa2QRr9bXR42fELrbMFbcmCjDt3UhOU2QOJ0k0=w1920-h942"
+                        alt="" width="200" height="50">
+                </a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto font1" id="change">
+                        <li class="nav-item m-2">
+                            <a class="nav-link " href="#">토익  
+                            </a>
+                        </li>
+                        <li class="nav-item m-2">
+                            <a class="nav-link" href="#">텝스</a>
+                        </li>
+                        <li class="nav-item m-2">
+                            <a class="nav-link" href="#">토플</a>
+                        </li>
+                        <li class="nav-item dropdown m-2">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">
+                                스피킹
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">토스</a>
+                                <a class="dropdown-item" href="#">오픽</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown m-2">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                              WITH ME?
+                            </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">현장 스터디</a>
+                              <a class="dropdown-item" href="#">랜선 스터디</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <form class="col login">
+                        <button type="button" class="btn btn-primary btn-sm nav_btn_login font2"
+                            onclick="location.href = 'main_최종.html'">Login</button> <!--로그인 후 변경사항-->
+                        <button type="button" class="btn btn-primary btn-sm nav_btn_join font2" 
+                        onclick="location.href = '{% url 'accounts:signup' %}'">Join</button>
+                    </form>
+
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+
+    <form class="codehim-form font1" method="post" action="{% url 'users:login' %}">
+        {% csrf_token %}
+        <div class="form-title">
+            <img src="https://lh3.google.com/u/0/d/1VIBVXBqxvaHFe765s2IAXdRlhv4gMwc3=w1919-h941-iv1" width="250px">
+        </div>
+
+        <label for="username"><i class="fa fa-envelope"></i> ID</label>
+        <input type="text" id="username" name="username" class="cm-input" placeholder="ID를 입력하세요">
+        <label for="password"><i class="fa fa-lock"></i> Password</label>
+        <input id="password" type="password" name="password" class="cm-input" placeholder="비밀번호를 입력하세요"><br>
+        <button type="submit" class="btn-login  gr-bg">로그인</button><br>
+        <button type="button" class="btn-join  " data-bs-toggle="modal" onclick="location.href = '{% url 'accounts:signup' %}'">회원가입</button>
+    </form>
+
+
+
+</body>
+
+</html>
